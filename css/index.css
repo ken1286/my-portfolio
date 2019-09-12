@@ -233,6 +233,13 @@ p {
     width: 100%;
   }
 }
+.slantedDivA div div {
+  margin-left: 0;
+}
+.slantedDivA div a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
 .slantedDivA div h2 {
   padding: 25px 0px;
   border-bottom: 1px solid grey;
