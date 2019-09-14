@@ -222,7 +222,7 @@ p {
   flex-wrap: wrap;
 }
 .slantedDivA div {
-  width: 75%;
+  width: 95%;
   margin: auto;
   color: #f1f1f1;
   letter-spacing: 2px;
@@ -240,21 +240,51 @@ p {
   color: #f1f1f1;
   margin: 0 0;
   padding: 3px 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .slantedDivA div .about-me {
-  margin-top: 25px;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  z-index: 8;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.slantedDivA div .about-me p {
+.slantedDivA div .about-me .about {
   font-family: "Raleway", sans-serif;
-  padding: 15px 0px;
-  font-size: 1.6rem;
   line-height: 1.4;
   letter-spacing: 2px;
+  padding: 5px 0;
+  font-size: 1.55rem;
+}
+@media (max-width: 800px) {
+  .slantedDivA div .about-me .about {
+    width: 100%;
+  }
 }
 .slantedDivA div .about-me h4 {
-  padding: 15px 0px;
+  padding: 10px 0px;
   border-bottom: 1px solid grey;
+}
+@media (max-width: 800px) {
+  .slantedDivA div .about-me {
+    width: 100%;
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 600px) {
+  .slantedDivA div .about-me {
+    padding: 10px;
+    width: 100%;
+  }
 }
 .slantedDivA div a {
   text-decoration: none;
@@ -270,11 +300,6 @@ p {
   .slantedDivA div h2 {
     font-size: 2.5rem;
   }
-}
-.slantedDivA div p {
-  padding: 25px 0px 0px 0px;
-  font-size: 1.75rem;
-  font-weight: 300;
 }
 .slantedDivA:after {
   position: absolute;
@@ -335,7 +360,7 @@ p {
 @media (max-width: 800px) {
   .slantedDiv .innerContent-container .innerContent {
     width: 100%;
-    order: 2;
+    order: 1;
   }
 }
 @media (max-width: 600px) {
@@ -375,9 +400,9 @@ p {
 }
 @media (max-width: 800px) {
   .slantedDiv .innerContent-container img {
-    order: 1;
+    order: 2;
     width: 50%;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 }
 @media (max-width: 600px) {

@@ -12,7 +12,7 @@
   .flexProperties(space-between, row, wrap, center);
 
   div {
-    width: 75%;
+    width: 95%;
     margin: auto;
     color: @textColor;
     letter-spacing: 2px;
@@ -31,24 +31,43 @@
         color: @textColor;
         margin: 0 0;
         padding: 3px 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
 
     .about-me {
-      margin-top: 25px;
+      width: 100%;
+      max-width: 1000px;
+      height: 100%;
+      z-index: 8;
+      .flexProperties(space-between, row, wrap, center);
 
-      p {
+      .about {
         font-family: "Raleway", sans-serif;
-        padding: 15px 0px;
-        font-size: 1.6rem;
         line-height: 1.4;
         letter-spacing: 2px;
+        padding: 5px 0;
+        font-size: 1.55rem;
+
+        @media @tablet {
+          width: 100%;
+        }
       }
 
       h4 {
-        padding: 15px 0px;
+        padding: 10px 0px;
         border-bottom: @borderBottom;
+      }
+
+      @media @tablet {
+        width: 100%;
+        order: 2;
+        .flexProperties(space-between, column, nowrap, center);
+      }
+
+      @media @mobile {
+        padding: 10px;
+        width: 100%;
       }
     }
 
@@ -68,11 +87,11 @@
       }
     }
 
-    p {
-      padding: 25px 0px 0px 0px;
-      font-size: 1.75rem;
-      font-weight: 300;
-    }
+    // p {
+    //   padding: 25px 0px 0px 0px;
+    //   font-size: 1.75rem;
+    //   font-weight: 300;
+    // }
   }
 }
 
@@ -125,7 +144,7 @@
 
       @media @tablet {
         width: 100%;
-        order: 2;
+        order: 1;
       }
 
       @media @mobile {
@@ -164,9 +183,9 @@
       transition: all 0.3s ease-in-out;
 
       @media @tablet {
-        order: 1;
+        order: 2;
         width: 50%;
-        margin-bottom: 3rem;
+        margin-top: 3rem;
       }
 
       @media @mobile {
