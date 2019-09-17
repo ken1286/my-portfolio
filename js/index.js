@@ -3,7 +3,7 @@ var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img1 = document.getElementById("img_1");
-// var img2 = document.getElementById("img_2");
+var img2 = document.getElementById("img_2");
 // var img3 = document.getElementById("img_3");
 // var img4 = document.getElementById("img_4");
 // var img5 = document.getElementById("img_5");
@@ -35,6 +35,14 @@ img1.addEventListener("mouseleave", event => {
   //   event.target.setAttribute("src", "img/fireflight.png");
   // }
   event.target.setAttribute("src", "img/fireflight.png");
+});
+
+img2.addEventListener("mouseenter", event => {
+  event.target.setAttribute("src", "img/img_3.png");
+});
+
+img2.addEventListener("mouseleave", event => {
+  event.target.setAttribute("src", "img/img_2.png");
 });
 
 // img2.onclick = function() {
