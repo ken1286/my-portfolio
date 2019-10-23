@@ -1,9 +1,9 @@
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img1 = document.getElementById("img_1");
-var img2 = document.getElementById("img_2");
+var img1 = document.getElementById('img_1');
+var img2 = document.getElementById('img_2');
 // var img3 = document.getElementById("img_3");
 // var img4 = document.getElementById("img_4");
 // var img5 = document.getElementById("img_5");
@@ -12,37 +12,37 @@ var img2 = document.getElementById("img_2");
 // var img8 = document.getElementById("img_8");
 // var img9 = document.getElementById("img_9");
 
-var modalImg = document.getElementById("myImg");
-var captionText = document.getElementById("caption");
+var modalImg = document.getElementById('myImg');
+var captionText = document.getElementById('caption');
 // img1.onclick = function() {
 //   modal.style.display = "block";
 //   modalImg.src = this.src;
 //   captionText.innerHTML = this.alt;
 // };
 
-img1.addEventListener("mouseenter", event => {
+img1.addEventListener('mouseenter', event => {
   // if (event.target.getAttribute("src") === "img/fireflight.png") {
-  event.target.setAttribute("src", "img/fireflightmap.png");
+  event.target.setAttribute('src', 'img/fireflightmap.png');
   // } else if (event.target.getAttribute("src") === "img/fireflightmap.jpg") {
   //   event.target.setAttribute("src", "img/fireflight.png");
   // }
 });
 
-img1.addEventListener("mouseleave", event => {
+img1.addEventListener('mouseleave', event => {
   // if (event.target.getAttribute("src") === "img/fireflight.png") {
   //   event.target.setAttribute("src", "img/fireflightmap.png");
   // } else if (event.target.getAttribute("src") === "img/fireflightmap.jpg") {
   //   event.target.setAttribute("src", "img/fireflight.png");
   // }
-  event.target.setAttribute("src", "img/fireflight.png");
+  event.target.setAttribute('src', 'img/fireflight.png');
 });
 
-img2.addEventListener("mouseenter", event => {
-  event.target.setAttribute("src", "img/img_3.png");
+img2.addEventListener('mouseenter', event => {
+  event.target.setAttribute('src', 'img/img_3.png');
 });
 
-img2.addEventListener("mouseleave", event => {
-  event.target.setAttribute("src", "img/img_2.png");
+img2.addEventListener('mouseleave', event => {
+  event.target.setAttribute('src', 'img/img_2.png');
 });
 
 // img2.onclick = function() {
@@ -94,61 +94,73 @@ img2.addEventListener("mouseleave", event => {
 // };
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  modal.style.display = 'none';
 };
 
-const skillsContent = document.querySelector("#skillsContent");
+const skillsContent = document.querySelector('#skillsContent');
 
-const htmlIcon = document.querySelector(".devicon-html5-plain");
+const htmlIcon = document.querySelector('.devicon-html5-plain');
 
-htmlIcon.addEventListener("mouseover", () => {
-  htmlIcon.classList.add("colored");
-  skillsContent.textContent = "HTML 5";
+htmlIcon.addEventListener('mouseover', () => {
+  htmlIcon.classList.add('colored');
+  skillsContent.textContent = 'HTML 5';
 });
 
-htmlIcon.addEventListener("mouseout", () => {
-  htmlIcon.classList.remove("colored");
-  skillsContent.textContent = "";
+htmlIcon.addEventListener('mouseout', () => {
+  htmlIcon.classList.remove('colored');
+  skillsContent.textContent = '';
 });
 
-const cssIcon = document.querySelector(".devicon-css3-plain");
+const cssIcon = document.querySelector('.devicon-css3-plain');
 
-cssIcon.addEventListener("mouseover", () => {
-  cssIcon.classList.add("colored");
-  skillsContent.textContent = "CSS 3";
+cssIcon.addEventListener('mouseover', () => {
+  cssIcon.classList.add('colored');
+  skillsContent.textContent = 'CSS 3';
 });
 
-cssIcon.addEventListener("mouseout", () => {
-  cssIcon.classList.remove("colored");
-  skillsContent.textContent = "";
+cssIcon.addEventListener('mouseout', () => {
+  cssIcon.classList.remove('colored');
+  skillsContent.textContent = '';
 });
 
-const jsIcon = document.querySelector(".devicon-javascript-plain");
+const jsIcon = document.querySelector('.devicon-javascript-plain');
 
-jsIcon.addEventListener("mouseover", () => {
-  jsIcon.classList.add("colored");
-  skillsContent.textContent = "JAVASCRIPT";
+jsIcon.addEventListener('mouseover', () => {
+  jsIcon.classList.add('colored');
+  skillsContent.textContent = 'JAVASCRIPT';
 });
 
-jsIcon.addEventListener("mouseout", () => {
-  jsIcon.classList.remove("colored");
-  skillsContent.textContent = "";
+jsIcon.addEventListener('mouseout', () => {
+  jsIcon.classList.remove('colored');
+  skillsContent.textContent = '';
 });
 
-const reactIcon = document.querySelector(".devicon-react-original");
+const pythonIcon = document.querySelector('.devicon-python-plain');
 
-reactIcon.addEventListener("mouseover", () => {
-  reactIcon.classList.add("colored");
-  skillsContent.textContent = "REACT JS";
+pythonIcon.addEventListener('mouseover', () => {
+  pythonIcon.classList.add('colored');
+  skillsContent.textContent = 'PYTHON';
 });
 
-reactIcon.addEventListener("mouseout", () => {
-  reactIcon.classList.remove("colored");
-  skillsContent.textContent = "";
+pythonIcon.addEventListener('mouseout', () => {
+  pythonIcon.classList.remove('colored');
+  skillsContent.textContent = '';
+});
+
+const reactIcon = document.querySelector('.devicon-react-original');
+
+reactIcon.addEventListener('mouseover', () => {
+  reactIcon.classList.add('colored');
+  skillsContent.textContent = 'REACT JS';
+});
+
+reactIcon.addEventListener('mouseout', () => {
+  reactIcon.classList.remove('colored');
+  skillsContent.textContent = '';
 });
 
 // const mongoIcon = document.querySelector(".devicon-mongodb-plain");
@@ -163,84 +175,96 @@ reactIcon.addEventListener("mouseout", () => {
 //   skillsContent.textContent = "";
 // });
 
-const gitHubIcon = document.querySelector(".devicon-github-plain");
+const gitHubIcon = document.querySelector('.devicon-github-plain');
 
-gitHubIcon.addEventListener("mouseover", () => {
-  gitHubIcon.classList.add("colored");
-  skillsContent.textContent = "GITHUB";
+gitHubIcon.addEventListener('mouseover', () => {
+  gitHubIcon.classList.add('colored');
+  skillsContent.textContent = 'GITHUB';
 });
 
-gitHubIcon.addEventListener("mouseout", () => {
-  gitHubIcon.classList.remove("colored");
-  skillsContent.textContent = "";
+gitHubIcon.addEventListener('mouseout', () => {
+  gitHubIcon.classList.remove('colored');
+  skillsContent.textContent = '';
 });
 
-const expressIcon = document.querySelector(".devicon-express-original");
+const expressIcon = document.querySelector('.devicon-express-original');
 
-expressIcon.addEventListener("mouseover", () => {
-  expressIcon.classList.add("colored");
-  skillsContent.textContent = "EXPRESS JS";
+expressIcon.addEventListener('mouseover', () => {
+  expressIcon.classList.add('colored');
+  skillsContent.textContent = 'EXPRESS JS';
 });
 
-expressIcon.addEventListener("mouseout", () => {
-  expressIcon.classList.remove("colored");
-  skillsContent.textContent = "";
+expressIcon.addEventListener('mouseout', () => {
+  expressIcon.classList.remove('colored');
+  skillsContent.textContent = '';
 });
 
-const nodeIcon = document.querySelector(".devicon-nodejs-plain");
+const nodeIcon = document.querySelector('.devicon-nodejs-plain');
 
-nodeIcon.addEventListener("mouseover", () => {
-  nodeIcon.classList.add("colored");
-  skillsContent.textContent = "NODE JS";
+nodeIcon.addEventListener('mouseover', () => {
+  nodeIcon.classList.add('colored');
+  skillsContent.textContent = 'NODE JS';
 });
 
-nodeIcon.addEventListener("mouseout", () => {
-  nodeIcon.classList.remove("colored");
-  skillsContent.textContent = "";
+nodeIcon.addEventListener('mouseout', () => {
+  nodeIcon.classList.remove('colored');
+  skillsContent.textContent = '';
 });
 
-const herokuIcon = document.querySelector(".devicon-heroku-plain");
+const djangoIcon = document.querySelector('.devicon-django-plain');
 
-herokuIcon.addEventListener("mouseover", () => {
-  herokuIcon.classList.add("colored");
-  skillsContent.textContent = "HEROKU";
+djangoIcon.addEventListener('mouseover', () => {
+  djangoIcon.classList.add('colored');
+  skillsContent.textContent = 'DJANGO';
 });
 
-herokuIcon.addEventListener("mouseout", () => {
-  herokuIcon.classList.remove("colored");
-  skillsContent.textContent = "";
+djangoIcon.addEventListener('mouseout', () => {
+  djangoIcon.classList.remove('colored');
+  skillsContent.textContent = '';
 });
 
-const lessIcon = document.querySelector(".devicon-less-plain-wordmark");
+const herokuIcon = document.querySelector('.devicon-heroku-plain');
 
-lessIcon.addEventListener("mouseover", () => {
-  skillsContent.textContent = "LESS";
+herokuIcon.addEventListener('mouseover', () => {
+  herokuIcon.classList.add('colored');
+  skillsContent.textContent = 'HEROKU';
 });
 
-lessIcon.addEventListener("mouseout", () => {
-  skillsContent.textContent = "";
+herokuIcon.addEventListener('mouseout', () => {
+  herokuIcon.classList.remove('colored');
+  skillsContent.textContent = '';
 });
 
-const muiIcon = document.querySelector(".material-ui-white");
+const lessIcon = document.querySelector('.devicon-less-plain-wordmark');
 
-muiIcon.addEventListener("mouseover", () => {
-  skillsContent.textContent = "MATERIAL UI";
-  muiIcon.src = "./img/materialUI-black.png";
+lessIcon.addEventListener('mouseover', () => {
+  skillsContent.textContent = 'LESS';
 });
 
-muiIcon.addEventListener("mouseout", () => {
-  skillsContent.textContent = "";
-  muiIcon.src = "./img/materialUI.png";
+lessIcon.addEventListener('mouseout', () => {
+  skillsContent.textContent = '';
 });
 
-const reduxWhiteIcon = document.querySelector(".redux-white");
+const muiIcon = document.querySelector('.material-ui-white');
 
-reduxWhiteIcon.addEventListener("mouseover", () => {
-  skillsContent.textContent = "REDUX";
-  reduxWhiteIcon.src = "./img/redux-color.png";
+muiIcon.addEventListener('mouseover', () => {
+  skillsContent.textContent = 'MATERIAL UI';
+  muiIcon.src = './img/materialUI-black.png';
 });
 
-reduxWhiteIcon.addEventListener("mouseout", () => {
-  skillsContent.textContent = "";
-  reduxWhiteIcon.src = "./img/redux-white.png";
+muiIcon.addEventListener('mouseout', () => {
+  skillsContent.textContent = '';
+  muiIcon.src = './img/materialUI.png';
+});
+
+const reduxWhiteIcon = document.querySelector('.redux-white');
+
+reduxWhiteIcon.addEventListener('mouseover', () => {
+  skillsContent.textContent = 'REDUX';
+  reduxWhiteIcon.src = './img/redux-color.png';
+});
+
+reduxWhiteIcon.addEventListener('mouseout', () => {
+  skillsContent.textContent = '';
+  reduxWhiteIcon.src = './img/redux-white.png';
 });
